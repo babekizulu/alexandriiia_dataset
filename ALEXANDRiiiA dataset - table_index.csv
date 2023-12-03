@@ -1,0 +1,45 @@
+table_name,table_description,table_type,table_contributors
+contributors,,ADMIN,https://www.linkedin.com/in/babekizulu/
+source_id_conventions,,ADMIN,https://www.linkedin.com/in/babekizulu/
+comments,,ADMIN,https://www.linkedin.com/in/babekizulu/
+footnotes,,ADMIN,https://www.linkedin.com/in/babekizulu/
+table_index,,INDEX,https://www.linkedin.com/in/babekizulu/
+acronym_index,,INDEX,https://www.linkedin.com/in/babekizulu/
+epoch_key_index,,INDEX,https://www.linkedin.com/in/babekizulu/
+key_index,This sheet documents and defines important terminology and phrases used throughout the ALEXANDRiiiA dataset,INDEX,https://www.linkedin.com/in/babekizulu/
+mechanical_inventions,"This sheet is a catalogue of historical inventions and their origins, and I intend to design models of these inventions as well as links to these models",DATASET,https://www.linkedin.com/in/babekizulu/
+mehanical_invention_category_index,,INDEX,https://www.linkedin.com/in/babekizulu/
+mechanical_invention_functions,,DATASET,https://www.linkedin.com/in/babekizulu/
+mathematical_apparatus,,DATASET,https://www.linkedin.com/in/babekizulu/
+rockets,,DATASET,https://www.linkedin.com/in/babekizulu/
+rocket_components,,DATASET,https://www.linkedin.com/in/babekizulu/
+satellites,,DATASET,https://www.linkedin.com/in/babekizulu/
+antennae,,DATASET,https://www.linkedin.com/in/babekizulu/
+analog_computers,,DATASET,https://www.linkedin.com/in/babekizulu/
+digital_computers,,DATASET,https://www.linkedin.com/in/babekizulu/
+compilers,,DATASET,https://www.linkedin.com/in/babekizulu/
+computer_programming_languages,,DATASET,https://www.linkedin.com/in/babekizulu/
+rocket_launches,,DATASET,https://www.linkedin.com/in/babekizulu/
+architecture,,DATASET,https://www.linkedin.com/in/babekizulu/
+dynastic_conversions_index,,INDEX,https://www.linkedin.com/in/babekizulu/
+occupation_index,,INDEX,https://www.linkedin.com/in/babekizulu/
+manufactured materials,"This sheet contains a catalogue of materials which were manufactured by civilizations, groups and nations in the past, as well as their respective regions",DATASET,https://www.linkedin.com/in/babekizulu/
+manufactured textiles,"This sheet contains a catalogue of textiles manufactured by civilizations, groups and nations in the past, as well as 3D models of these textiles",DATASET,https://www.linkedin.com/in/babekizulu/
+artifacts,,DATASET,https://www.linkedin.com/in/babekizulu/
+artworks,,DATASET,https://www.linkedin.com/in/babekizulu/
+scientific_apparatus,,DATASET,https://www.linkedin.com/in/babekizulu/
+collaborative_scientific_efforts,,DATASET,https://www.linkedin.com/in/babekizulu/
+intellectual contributions,"This sheet contains a catalogue of the various intellectual contributions of past civilizations, groups and nations to humanities resevoir of knowledge",DATASET,https://www.linkedin.com/in/babekizulu/
+economics,,DATASET,https://www.linkedin.com/in/babekizulu/
+agricultural_techniques,,DATASET,https://www.linkedin.com/in/babekizulu/
+agricultural_tools,,DATASET,https://www.linkedin.com/in/babekizulu/
+institutions_organizations_unions,,DATASET,https://www.linkedin.com/in/babekizulu/
+scientists,,DATASET,https://www.linkedin.com/in/babekizulu/
+mathematicians,,DATASET,https://www.linkedin.com/in/babekizulu/
+engineers,,DATASET,https://www.linkedin.com/in/babekizulu/
+architects,"This sheet is a catalogue of structures, buildings and canals built in the past. It contains data on their architects and their region of origin. It also contains links to 3D models of these structures",DATASET,https://www.linkedin.com/in/babekizulu/
+astronauts,,DATASET,https://www.linkedin.com/in/babekizulu/
+historians,,DATASET,https://www.linkedin.com/in/babekizulu/
+sources,This sheet contains the sources whch we curated the data from,DATASET,https://www.linkedin.com/in/babekizulu/
+source_reliability_rating_system,,RUBRIC,https://www.linkedin.com/in/babekizulu/
+architectural_complexity_rating_system,,RUBRIC,https://www.linkedin.com/in/babekizulu/

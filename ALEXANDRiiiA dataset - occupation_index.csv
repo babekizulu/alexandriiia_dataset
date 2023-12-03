@@ -1,0 +1,13 @@
+occupation_id,occupation,frequency,definition,source_ids,source_page_references
+OCCID0,Royal Architect,,,,
+OCCID1,Engineer,,,,
+OCCID2,Royal Chancellor,,,,
+OCCID3,Administrator of the Great Mansion,,,,
+OCCID4,Hereditary Noble,,,,
+OCCID5,Heliopolitan High Priest,,,,
+OCCID6,Physician,,,,
+OCCID7,Minister of Public Works,,,,
+OCCID8,King,,,,
+OCCID9,Computer,,An individual that performs mathematical computations,C23A3,p.18
+OCCID10,Astronomer,,,,
+OCCID11,Ballistic Computer,,Mathematicians who calculated the range of weapons during WW1,C23A3,p.18

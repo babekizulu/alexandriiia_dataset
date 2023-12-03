@@ -1,0 +1,6 @@
+table_name,comment_id,comment_type,comment,resolved,priority
+architecture,comm0,TODO,Convert units of measurement,FALSE,LOW
+sources,comm1,TODO,Don't change source ID's,FALSE,HIGH
+occupation_index,comm2,TODO,Count the number of people mentioned by the sources who fall under each occupation category. Can be used to draw insights about  popular historical fields of employment.,FALSE,LOW
+general,comm3,TODO,Go over ethnic identifications and document the methods we used to categorize,FALSE,HIGH
+analysis_bookmark,comm4,Bookmark,p.48,FALSE,LOW

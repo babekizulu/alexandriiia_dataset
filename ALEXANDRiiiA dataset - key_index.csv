@@ -1,0 +1,263 @@
+key,table,data_type,key_definition,attribution
+contributor_link,contributors,VARCHAR(150),"A link to the contributors social profile, portfolio or website",null
+symbol,source_id_conventions,VARCHAR(5),Represents each symbol included in the source ID'ing convention,null
+description,source_id_conventions,VARCHAR(500),Describes the purpose of each symbol in the source ID'ing convention,null
+example,source_id_conventions,VARCHAR(7),An example of the convention being described,null
+table_name,comments,VARCHAR(50),The name of the table which the commentor is commenting on,null
+comment_id,comments,VARCHAR(50),"Each comment is given a unique comment ID, for keeping track of comments",null
+comment_type,comments,VARCHAR(25),Each comment is given a type which denotes the purpose for which the comment has been made,null
+comment,comments,VARCHAR(150),The comment being made by the commentor.,null
+footnote_id,footnotes,VARCHAR(50),,null
+footnote,footnotes,VARCHAR(500),,null
+table_name,table_index,VARCHAR(50),The name of the table or sheet,null
+table_description,table_index,VARCHAR(500),A brief description of the purpose of the table,null
+table_type,table_index,VARCHAR(7),Each table is given a type which denotes the purpose of the table,null
+key,key_index,VARCHAR(50),Represents a header/column name,null
+table,key_index,VARCHAR(50),Represents the table on which the header/column can be found,null
+data_type,key_index,VARCHAR(150),Represents the type of the data being recorded in a particular header/column,null
+key_definition,key_index,VARCHAR(500),Defines the data being recorded in a particular header/column,null
+attribution,key_index,VARCHAR(500),Gives attribution to any external sources which were used to define a key or inform a rating system,null
+technological_epoch_name,epoch_key,VARCHAR(25),The name given to a particular period of technological development,null
+technological_epoch_dates,epoch_key,VARCHAR(50),The beginning and end dates of a particular period of technological development,null
+invention_id,mechanical_inventions,VARCHAR(100),The unique ID of the invention being recorded in this row,null
+date_invented_bce,mechanical_inventions,INTEGER,Records the dates of inventions which were made BCE (Before the Christian Era) time period,null
+date_invented_ad,mechanical_inventions,INTEGER,Records the dates of inventions which were made in the AD (Anno Domini)  time period,null
+ancient,mechanical_inventions,BOOLEAN,Records a True or False description of the period in which an invention was made,null
+modern,mechanical_inventions,BOOLEAN,Records a True or False description of the period in which an invention was made,null
+invention_name,mechanical_inventions,VARCHAR(100),The name of the invention being recorded in this row,null
+inventor,mechanical_inventions,VARCHAR(100),Records the name of the person who engineered the invention,null
+education,mechanical_inventions,VARCHAR(100) ,Records the education of the person who engineered the invention,null
+model,mechanical_inventions,VARCHAR(150),Records the link to the 3D model of the invention as a 3D file,null
+model_image,mechanical_inventions,VARCHAR(150),Records the link to the image of the 3D model of the invention,null
+multi_regional,mechanical_inventions,BOOLEAN,"If the invention being recorded in this row was invented in multiple regions, either collaboratively or independently in cases where two seperate groupings of people engineered the same inventon by coincidence, then this field will be recorded as True. If not, this field will be recorded as False.",null
+regions,mechanical_inventions,VARCHAR(100) ,Records the region/s in which an invention was invented,null
+num_of_corroborative_sources,mechanical_inventions,INTEGER,Records the number of sources corroborating the information being recorded in a particular row,null
+source_ids,mechanical_inventions,VARCHAR(100) ,This array records the ID's of the sources from which this data is derived,null
+source_page_references,mechanical_inventions,VARCHAR(15) ,An array of the corresponding pages referenced from the source which informed this rows data,null
+primary_source_ids,mechanical_inventions,VARCHAR(100) ,An array of the unique ID's of the primary sources from which the data in this row was derived,null
+primary_source_page_references,mechanical_inventions,VARCHAR(15) ,An array of the corresponding pages referenced from the primary source which informed this rows data,null
+structure_id,architecture,VARCHAR(100),The unique ID of the structure being recorded in this row,null
+date_constructed_bce,architecture,INTEGER,Approximate Date Constructed BCE,null
+date_constructed_ad,architecture,INTEGER,Approximate Date Constructed AD,null
+structure_name,architecture,VARCHAR(100),The name of the structure being recorded in this row,null
+renovation_of_previous_structure,architecture,BOOLEAN,"If the structure being recorded in this row is a renovation of a previous structure, this field will be recorded as True. If not, this field will be recorded as False",null
+previous_structure,architecture,VARCHAR(100),"If the structure being recorded in this row is a renovation of a previous structure, this field will contain the name of the previous structure",
+iteration_on_previous_structure,architecture,BOOLEAN,"If the structure being recorded in this row implements a new iteration of the design of a previously built structure,  this field will be recorded as True. If not, this field will be recorded as False",null
+architectural_complexity,architecture,INTEGER,See Architectural Complexity Rating System,
+structural_dimensions,architecture,VARCHAR(50),,
+statue,architecture,BOOLEAN,"If the structure being recorded in this row is a statue, this field will be recorded as True. If not, this field will be recorded as false",null
+wall,architecture,BOOLEAN,"If the structure being recorded in this row is a wall, this field will be recorded as True. If not, this field will be recorded as false",null
+stairwell_staircase,architecture,BOOLEAN,"If the structure being recorded in this row is a stairwell or a staircase, this field will be recorded as True. If not, this field will be recorded as false",null
+structural_support,architecture,BOOLEAN,"If the structure being recorded in this row is a type of structural support, this field will be recorded as True. If not, this field will be recorded as false",null
+building,architecture,BOOLEAN,"If the structure being recorded in this row is a type of building (i.e it contains at least one room which is designed for people to enter), this field will be recorded as True. If not, this field will be recorded as false",null
+castle,architecture,BOOLEAN,"If the structure being recorded in this row is a castle, this field will be recorded as True. If not, this field will be recorded as false",null
+gallery,architecture,BOOLEAN,"If the structure being recorded in this row is a gallery, this field will be recorded as True. If not, this field will be recorded as false",null
+temple,architecture,BOOLEAN,"If the structure being recorded in this row is a temple, this field will be recorded as True. If not, this field will be recorded as false",null
+tomb,architecture,BOOLEAN,"If the structure being recorded in this row is a tomb, this field will be recorded as True. If not, this field will be recorded as false",null
+bridge,architecture,BOOLEAN,"If the structure being recorded in this row is a bridge, this field will be recorded as True. If not, this field will be recorded as false",null
+canal_system,architecture,BOOLEAN,"If the structure being recorded in this row is a canal system, this field will be recorded as True. If not, this field will be recorded as false",null
+dam,architecture,BOOLEAN,"If the structure being recorded in this row is a dam, this field will be recorded as True. If not, this field will be recorded as false",null
+building_material,architecture,VARCHAR(50) ,,
+structural_integrity,architecture,INTEGER,Rated based on source descriptions of current structural integrity,
+structural_preservation,architecture,VARCHAR(150),,
+architects,architecture,VARCHAR(100) ,,
+wonder,architecture,BOOLEAN,"If the structure being recorded in this row is an architectural wonder, either from modern lists or from previously recognized lists of architectural wonders, this field will be recorded as True. If not, this field will be recorded as false",null
+model,architecture,VARCHAR(150),Records the link to the 3D model of the structure as a 3D file,null
+model_image,architecture,VARCHAR(150),Records the link to the image of the 3D model of the structure,null
+regions,architecture,VARCHAR(100) ,Records the region/s in which a structure was constructed,null
+num_of_corroborative_sources,architecture,INTEGER,Records the number of sources corroborating the information being recorded in a particular row,null
+source_ids,architecture,VARCHAR(100) ,This array records the ID's of the sources from which this data is derived,null
+source_page_references,architecture,VARCHAR(50) ,An array of the corresponding pages referenced from the source which informed this rows data,null
+primary_source_ids,architecture,VARCHAR(100) ,An array of the unique ID's of the primary sources from which the data in this row was derived,null
+primary_source_page_references,architecture,VARCHAR(50) ,An array of the corresponding pages referenced from the primary source which informed this rows data,null
+material_id,manufactured_materials,VARCHAR(100),The unique ID of the material being recorded in this row,null
+date_developed,manufactured_materials,VARCHAR(50),,
+raw_material,manufactured_materials,VARCHAR(100) ,,
+material_name,manufactured_materials,VARCHAR(100),The name of the material being recorded in this row,null
+material_application,manufactured_materials,VARCHAR(150) ,,
+material_durability,manufactured_materials,INTEGER,Rating based on the metrics listed in the Durabilty Rating System,
+model,manufactured_materials,VARCHAR(150),Records the link to the 3D model of the material as a 3D file,null
+model_image,manufactured_materials,VARCHAR(150),Records the link to the image of the 3D model of the material,null
+multi_regional,manufactured_materials,BOOLEAN,"If the material being recorded in this row was developed in multiple regions, either collaboratively or independently in cases where two seperate groupings of people developed the same material by coincidence, then this field will be recorded as True. If not, this field will be recorded as False.",null
+regions,manufactured_materials,VARCHAR(100) ,Records the region/s in which a material was developed,null
+num_of_corroborative_sources,manufactured_materials,INTEGER,Records the number of sources corroborating the information being recorded in a particular row,null
+source_ids,manufactured_materials,VARCHAR(100) ,This array records the ID's of the sources from which this data is derived,null
+source_page_references,manufactured_materials,VARCHAR(50) ,An array of the corresponding pages referenced from the source which informed this rows data,null
+primary_source_ids,manufactured_materials,VARCHAR(100) ,An array of the unique ID's of the primary sources from which the data in this row was derived,null
+primary_source_page_references,manufactured_materials,VARCHAR(50) ,An array of the corresponding pages referenced from the primary source which informed this rows data,null
+textile_id,manufactured_textiles,VARCHAR(100),The unique ID of the textile being recorded in this row,null
+date_manufactured,manufactured_textiles,VARCHAR(50),,
+textile_item_name,manufactured_textiles,VARCHAR(100),The name of the textile being recorded in this row,null
+textile_durability,manufactured_textiles,INTEGER,Rated based on metrics listed in the Textile Durability Rating System,
+manufacturer,manufactured_textiles,VARCHAR(100) ,,
+model,manufactured_textiles,VARCHAR(150),Records the link to the 3D model of the textile as a 3D file,null
+model_image,manufactured_textiles,VARCHAR(150),Records the link to the image of the 3D model of the textile,null
+multi_regional,manufactured_textiles,BOOLEAN,"If the textile being recorded in this row was manufactured in multiple regions, either collaboratively or independently in cases where two seperate groupings of people manufactured the same textile by coincidence, then this field will be recorded as True. If not, this field will be recorded as False.",null
+regions,manufactured_textiles,VARCHAR(100) ,Records the region/s in which a textile was manufactured,null
+num_of_corroborative_sources,manufactured_textiles,INTEGER,Records the number of sources corroborating the information being recorded in a particular row,null
+source_ids,manufactured_textiles,VARCHAR(100) ,This array records the ID's of the sources from which this data is derived,null
+source_page_references,manufactured_textiles,VARCHAR(50) ,An array of the corresponding pages referenced from the source which informed this rows data,null
+primary_source_ids,manufactured_textiles,VARCHAR(100) ,An array of the unique ID's of the primary sources from which the data in this row was derived,null
+primary_source_page_references,manufactured_textiles,VARCHAR(50) ,An array of the corresponding pages referenced from the primary source which informed this rows data,null
+intellectual_contribution_id,intellectual_contributions,VARCHAR(100),The unique ID of the intellectual contribution being recorded in this row,null
+date_contributed,intellectual_contributions,VARCHAR(50),,
+contribution_name,intellectual_contributions,VARCHAR(100),The name of the intellectual contribution being recorded in this row,null
+researchers,intellectual_contributions,VARCHAR(100) ,,
+mathematics,intellectual_contributions,BOOLEAN,"If the intellectual contribution being recorded was in the subject-domain of mathematics, then this field will be recorded as True. If not, this field will be recorded as False",null
+writing,intellectual_contributions,BOOLEAN,"If the intellectual contribution being recorded was in the subject-domain of writing-systems, then this field will be recorded as True. If not, this field will be recorded as False","This key definition was formulated with the help of Bing Chat with GPT-4. The specific area in which Bing Chat assisted was finding the correct technical term for the development of writing, which Bing Chat referred to as writing systems. For more information about Bing Chat, visit:"
+science,intellectual_contributions,BOOLEAN,"If the intellectual contribution being recorded was in the subject-domain of mathematics, then this field will be recorded as True. If not, this field will be recorded as False",null
+engineering,intellectual_contributions,BOOLEAN,"If the intellectual contribution being recorded was in the subject-domain of mathematics, then this field will be recorded as True. If not, this field will be recorded as False",null
+philosophy,intellectual_contributions,BOOLEAN,"If the intellectual contribution being recorded was in the subject-domain of mathematics, then this field will be recorded as True. If not, this field will be recorded as False",null
+multi_regional,intellectual_contributions,BOOLEAN,"If the intellectual contribution being recorded in this row was developed in multiple regions, either collaboratively or independently in cases where two seperate groupings of people developed the same type of knowledge by coincidence, then this field will be recorded as True. If not, this field will be recorded as False.",null
+regions,intellectual_contributions,VARCHAR(100) ,Records the region/s in which a field of knowledge was developed,null
+num_of_corroborative_sources,intellectual_contributions,INTEGER,Records the number of sources corroborating the information being recorded in a particular row,null
+source_ids,intellectual_contributions,VARCHAR(100) ,This array records the ID's of the sources from which this data is derived,null
+source_page_references,intellectual_contributions,VARCHAR(50) ,An array of the corresponding pages referenced from the source which informed this rows data,null
+primary_source_ids,intellectual_contributions,VARCHAR(100) ,An array of the unique ID's of the primary sources from which the data in this row was derived,null
+primary_source_page_references,intellectual_contributions,VARCHAR(50) ,An array of the corresponding pages referenced from the primary source which informed this rows data,null
+group_id,institutions_organizations_unions,VARCHAR(100),"The unique ID of the institution, organization or union being recorded in this row",null
+group_name,institutions_organizations_unions,VARCHAR(100),"The name of the institution, organization or union being recorded in this row",null
+institution,institutions_organizations_unions,BOOLEAN,,null
+organization,institutions_organizations_unions,BOOLEAN,,null
+union,institutions_organizations_unions,BOOLEAN,,null
+years_active,institutions_organizations_unions,VARCHAR(50),,
+founders,institutions_organizations_unions,VARCHAR(100) ,,
+multi_regional,institutions_organizations_unions,BOOLEAN,"If the institution, organization or union being recorded in this row was founded in multiple regions, then this field will be recorded as True. If not, this field will be recorded as False.",null
+regions,institutions_organizations_unions,VARCHAR(100) ,"Records the region/s in which an institution, organization or union was founded",null
+num_of_corroborative_sources,institutions_organizations_unions,INTEGER,Records the number of sources corroborating the information being recorded in a particular row,null
+source_ids,institutions_organizations_unions,VARCHAR(100) ,This array records the ID's of the sources from which this data is derived,null
+source_page_references,institutions_organizations_unions,VARCHAR(50) ,An array of the corresponding pages referenced from the source which informed this rows data,null
+primary_source_ids,institutions_organizations_unions,VARCHAR(100) ,An array of the unique ID's of the primary sources from which the data in this row was derived,null
+primary_source_page_references,institutions_organizations_unions,VARCHAR(50) ,An array of the corresponding pages referenced from the primary source which informed this rows data,null
+scientist_id,scientists,VARCHAR(100),The unique ID of the scientist being recorded in this row,null
+scientist_name,scientists,VARCHAR(100),The name of the scientist being recorded in this row,null
+gender,scientists,VARCHAR(12),,
+lifetime,scientists,VARCHAR(25),,
+occupations,scientists,VARCHAR(25) ,,
+institutions,scientists,VARCHAR(100) ,,
+regions,scientists,VARCHAR(100) ,Records the region/s in which a scientist did the bulk of their work,null
+notable_achievements,scientists,VARCHAR(150) ,,
+research,scientists,VARCHAR(50) ,,
+education,scientists,VARCHAR(100) ,Records the education of the scientist being recorded,
+model,scientists,VARCHAR(150) ,Records the link to the 3D model of the scientist as a 3D file,null
+model_image,scientists,VARCHAR(150) ,Records the link to the image of the 3D model of the scientist,null
+num_of_corroborative_sources,scientists,INTEGER,Records the number of sources corroborating the information being recorded in a particular row,null
+source_ids,scientists,VARCHAR(100) ,This array records the ID's of the sources from which this data is derived,null
+source_page_references,scientists,VARCHAR(50) ,An array of the corresponding pages referenced from the source which informed this rows data,null
+primary_source_ids,scientists,VARCHAR(100) ,An array of the unique ID's of the primary sources from which the data in this row was derived,null
+primary_source_page_references,scientists,VARCHAR(50) ,An array of the corresponding pages referenced from the primary source which informed this rows data,null
+mathematician_id,mathematicians,VARCHAR(100),The unique ID of the mathematician being recorded in this row,null
+mathematician_name,mathematicians,VARCHAR(100),The name of the mathematician being recorded in this row,null
+gender,mathematicians,VARCHAR(12),,
+lifetime,mathematicians,VARCHAR(50),,
+occupations,mathematicians,VARCHAR(50) ,,
+institutions,mathematicians,VARCHAR(150) ,,
+regions,mathematicians,VARCHAR(100) ,Records the region/s in which a mathematician did the bulk of their work,null
+notable_achievements,mathematicians,VARCHAR(150) ,,
+research,mathematicians,VARCHAR(100) ,,
+education,mathematicians,VARCHAR(150) ,Records the education of the mathematician being recorded,
+model,mathematicians,VARCHAR(150),Records the link to the 3D model of the mathematician as a 3D file,null
+model_image,mathematicians,VARCHAR(150),Records the link to the image of the 3D model of the mathematicians,null
+quotes,mathematicians,VARCHAR(500) ,,
+num_of_corroborative_sources,mathematicians,INTEGER,Records the number of sources corroborating the information being recorded in a particular row,null
+source_ids,mathematicians,VARCHAR(100) ,This array records the ID's of the sources from which this data is derived,null
+source_page_references,mathematicians,VARCHAR(50) ,An array of the corresponding pages referenced from the source which informed this rows data,null
+primary_source_ids,mathematicians,VARCHAR(100) ,An array of the unique ID's of the primary sources from which the data in this row was derived,null
+primary_source_page_references,mathematicians,VARCHAR(50) ,An array of the corresponding pages referenced from the primary source which informed this rows data,null
+architect_id,architects,VARCHAR(100),The unique ID of the architect being recorded in this row,null
+architect_name,architects,VARCHAR(100),The name of the architect being recorded in this row,null
+gender,architects,VARCHAR(12),,
+lifetime,architects,VARCHAR(50),Approximate Lifetime based on dating found in sources,
+occupations,architects,VARCHAR(50) ,,
+institutions,architects,VARCHAR(100) ,,
+regions,architects,VARCHAR(100) ,Records the region/s in which an architect did the bulk of their work,null
+continents,architects,VARCHAR(100) ,,
+notable_achievements,architects,VARCHAR(150) ,,
+constructions,architects,VARCHAR(100) ,,
+designs,architects,VARCHAR (100) ,,
+architectural_style_contributions,architects,VARCHAR (100) ,,
+research,architects,VARCHAR (100) ,,
+education,architects,VARCHAR (150) ,Records the education of the architect being recorded,
+model,architects,VARCHAR(150),Records the link to the 3D model of the architect as a 3D file,null
+model_image,architects,VARCHAR(150),Records the link to the image of the 3D model of the architect,null
+quotes,architects,VARCHAR(500) ,,
+num_of_corroborative_sources,architects,INTEGER,Records the number of sources corroborating the information being recorded in a particular row,null
+source_ids,architects,VARCHAR(100) ,This array records the ID's of the sources from which this data is derived,null
+source_page_references,architects,VARCHAR(50) ,An array of the corresponding pages referenced from the source which informed this rows data,null
+primary_source_ids,architects,VARCHAR(100) ,An array of the unique ID's of the primary sources from which the data in this row was derived,null
+primary_source_page_references,architects,VARCHAR(50) ,An array of the corresponding pages referenced from the primary source which informed this rows data,null
+engineer_id,engineers,VARCHAR(100),The unique ID of the engineer being recorded in this row,null
+engineer_name,engineers,VARCHAR(100),The name of the engineer being recorded in this row,null
+gender,engineers,VARCHAR(12),,
+lifetime,engineers,VARCHAR(50),,
+occupations,engineers,VARCHAR(50) ,,
+institutions,engineers,VARCHAR(100) ,,
+regions,engineers,VARCHAR(100) ,Records the region/s in which an engineer did the bulk of their work,null
+continents,engineers,VARCHAR(100) ,,
+notable_achievements,engineers,VARCHAR(150) ,,
+inventions,engineers,VARCHAR(100) ,,
+designs,engineers,VARCHAR(100) ,,
+num_of_patents,engineers,INTEGER,,
+engineering_contributions,engineers,VARCHAR(150) ,,
+research,engineers,VARCHAR(100) ,,
+education,engineers,VARCHAR(150) ,Records the education of the engineer being recorded,
+model,engineers,VARCHAR(150),Records the link to the 3D model of the engineer as a 3D file,null
+model_image,engineers,VARCHAR(150),Records the link to the image of the 3D model of the engineer,null
+quotes,engineers,VARCHAR(500) ,,
+firms,engineers,VARCHAR(50) ,,
+firm_speciality,engineers,VARCHAR(50) ,,
+firm_founding_date,engineers,VARCHAR(50),,
+firm_business_region,engineers,VARCHAR(100),,
+num_of_corroborative_sources,engineers,INTEGER,Records the number of sources corroborating the information being recorded in a particular row,null
+source_ids,engineers,VARCHAR(100) ,This array records the ID's of the sources from which this data is derived,null
+source_page_references,engineers,VARCHAR(50) ,An array of the corresponding pages referenced from the source which informed this rows data,null
+video_timestamp,engineers,VARCHAR(25) ,,
+primary_source_ids,engineers,VARCHAR(100) ,An array of the unique ID's of the primary sources from which the data in this row was derived,null
+primary_source_page_references,engineers,VARCHAR(50) ,An array of the corresponding pages referenced from the primary source which informed this rows data,null
+historian_id,historians,VARCHAR(100),The unique ID of the historian being recorded in this row,null
+historian_name,historians,VARCHAR(100),The name of the historian being recorded in this row,null
+gender,historians,VARCHAR(12),,
+occupations,historians,VARCHAR(50) ,,
+lifetime,historians,VARCHAR(50),,
+regions,historians,VARCHAR(100) ,Records the region/s in which a historian did the bulk of their work,null
+num_of_corroborative_sources,historians,INTEGER,Records the number of sources corroborating the information being recorded in a particular row,null
+source_ids,historians,VARCHAR(100) ,This array records the ID's of the sources from which this data is derived,null
+source_page_references,historians,VARCHAR(50) ,An array of the corresponding pages referenced from the source which informed this rows data,null
+primary_source_ids,historians,VARCHAR(100) ,An array of the unique ID's of the primary sources from which the data in this row was derived,null
+primary_source_page_references,historians,VARCHAR(50) ,An array of the corresponding pages referenced from the primary source which informed this rows data,null
+source_id,sources,VARCHAR(100),,
+source_reliability_rating,sources,INTEGER,,
+source_title,sources,VARCHAR(150),,
+volume,sources,INTEGER,,
+chapter,sources,INTEGER,,
+number,sources,INTEGER,,
+archeological site,sources,VARCHAR(100),,
+witness,sources,VARCHAR(100) ,,
+authors,sources,VARCHAR(100) ,,
+publisher,sources,VARCHAR(100),,
+city_published,sources,VARCHAR(100) ,,
+regions,sources,VARCHAR(100) ,Records the region/s from which a source originates,null
+original_language,sources,VARCHAR(100) ,,
+isbn,sources,VARCHAR(14),,
+year_published,sources,INTEGER,,
+original_year_published_bce,sources,INTEGER,,
+original_year_published_ad,sources,INTEGER,,
+source_type,sources,VARCHAR(50),,
+contemporary,sources,BOOLEAN,Any source which was published within the last 100 years,null
+primary_source_id,sources,VARCHAR(100),,
+source_id,source_reliability_rating_system,VARCHAR(100),,
+source_reliability_rating,source_reliability_rating_system,INTEGER,,"{attribution: The definition of this metric was provided by OpenAI's ChatGPT. The rubric for this reliability rating was created using suggestions given by OpenAI's ChatGPT., source_link:  https://openai.com  }"
+authorship_and_expertise,source_reliability_rating_system,INTEGER,This metric is measured based on the extent to which the source satisfies these questions: Is the author an expert in the field or subject matter? Are the author's credentials and affiliations relevant to the topic? Does the author have a history of accurate and well researched work?,"{attribution: The definition of this metric was provided by OpenAI's ChatGPT. The rubric for this reliability rating was created using suggestions given by OpenAI's ChatGPT., source_link:  https://openai.com  }"
+publication_source,source_reliability_rating_system,INTEGER,"This metric is measured based on the extent to which the source satisfies these questions: Is the source a reputable and established publication, such as a respected academic journal, reputable book publisher, or well-regarded website? Does the publication have a peer-review process for vetting content?","{attribution: The definition of this metric was provided by OpenAI's ChatGPT. The rubric for this reliability rating was created using suggestions given by OpenAI's ChatGPT., source_link:  https://openai.com  }"
+citations_and_references,source_reliability_rating_system,INTEGER,This metric is measured based on the extent to which the source satisfies these questions: Does the source provide citations and references to support its claims? Are these citations from credible and reliable sources themselves?,"{attribution: The definition of this metric was provided by OpenAI's ChatGPT. The rubric for this reliability rating was created using suggestions given by OpenAI's ChatGPT., source_link:  https://openai.com  }"
+objectivity_and_bias,source_reliability_rating_system,INTEGER,This metric is measured based on the extent to which the source satisfies these questions: Does the source provide information in an objective and balanced manner? Is there any evidence of bias or a specific agenda that might influence the presentation of facts?,"{attribution: The definition of this metric was provided by OpenAI's ChatGPT. The rubric for this reliability rating was created using suggestions given by OpenAI's ChatGPT., source_link:  https://openai.com  }"
+date_of_publication,source_reliability_rating_system,INTEGER,"This metric is measured based on the extent to which the source satisfies these questions: Is the information up-to-date, especially for fields that have seen recent developments or revisions?","{attribution: The definition of this metric was provided by OpenAI's ChatGPT. The rubric for this reliability rating was created using suggestions given by OpenAI's ChatGPT., source_link:  https://openai.com  }"
+audience_and_intent,source_reliability_rating_system,INTEGER,This metric is measured based on the extent to which the source satisfies these questions: Who is the intended audience of the source? Does the sources intents align with the research goals of project ALEXANDRiiiA?,"{attribution: The definition of this metric was provided by OpenAI's ChatGPT. The rubric for this reliability rating was created using suggestions given by OpenAI's ChatGPT., source_link:  https://openai.com  }"
+cross_referencing,source_reliability_rating_system,INTEGER,This metric is measured based on the extent to which the source satisfies these questions: Can we find similar information or facts corroborated in multiple reliable sources (3 or more)?,"{attribution: The definition of this metric was provided by OpenAI's ChatGPT. The rubric for this reliability rating was created using suggestions given by OpenAI's ChatGPT., source_link:  https://openai.com  }"
+plagiarism_copyright_infringement,source_reliability_rating_system,INTEGER,"This metric is measured based on the extent to which the source satisfies these questions: Is the source plagiarizing content from other works or violating copyright regulations? If not plagiarized, score 4/4","{attribution: The definition of this metric was provided by OpenAI's ChatGPT. The rubric for this reliability rating was created using suggestions given by OpenAI's ChatGPT., source_link:  https://openai.com  }"
+peer_review_scholarly_consensus,source_reliability_rating_system,INTEGER,"This metric is measured based on the extent to which the source satisfies these questions: Where applicable, has the work undergone peer-review by experts in the field? Does the information align with the broader scholarly consensus on the topic?","{attribution: The definition of this metric was provided by OpenAI's ChatGPT. The rubric for this reliability rating was created using suggestions given by OpenAI's ChatGPT., source_link:  https://openai.com  }"
+online_reputation,source_reliability_rating_system,INTEGER,"This metric is measured based on the extent to which the source satisfies these questions: If the source originates from an online publication or website, does this publication or website have a good reputation? If N/A, score as 5/5","{attribution: The definition of this metric was provided by OpenAI's ChatGPT. The rubric for this reliability rating was created using suggestions given by OpenAI's ChatGPT., source_link:  https://openai.com  }"
+transparency_citations,source_reliability_rating_system,INTEGER,"This metric is measured based on the extent to which the source satisfies these questions: Does the source provide clear citations, references and sources for the information it presents?","{attribution: The definition of this metric was provided by OpenAI's ChatGPT. The rubric for this reliability rating was created using suggestions given by OpenAI's ChatGPT., source_link:  https://openai.com  }"
+primary_secondary_sources,source_reliability_rating_system,INTEGER,This metric is measured based on the extent to which the source satisfies these questions: Does the source draw it's information from primary or secondary sources?,"{attribution: The definition of this metric was provided by OpenAI's ChatGPT. The rubric for this reliability rating was created using suggestions given by OpenAI's ChatGPT., source_link:  https://openai.com  }"
+rating_justifications,source_reliability_rating_system,VARCHAR(500) ,This array contains sources which can be referenced to justify the score given to the source for each rating metric,
+(P),,,"Provisional categorization based on available information, may not be accurate",

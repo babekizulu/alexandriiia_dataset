@@ -1,0 +1,6 @@
+symbol,description,example
+P,primary,P23A1
+C,contemporary,C23A1
+YY,Last two digits of year that source was catalogued on this dataset,C23A25
+A-Z,"This letter notates the recency of the data, will increase in ascending order as more data is added",C23G78
+1-99,"This number notates the recency of the data, will increase in ascending order as more data is added. After this number reaches 99, the next notation letter (A-Z), begins",P23B99
